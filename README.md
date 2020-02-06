@@ -8,7 +8,7 @@ Navigate to the main directory and run:
 ## How to run
 Navigate to the main directory and run:
 ### `npm start`
-Open (http://localhost:3000) to view it on the browser.
+Open http://localhost:3000 to view it on the browser.
 
 ### Start Node Server
 - Navigate to the `server` folder
