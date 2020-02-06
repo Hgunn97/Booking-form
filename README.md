@@ -8,6 +8,9 @@ Navigate to the main directory and run:
 ## How to run
 Navigate to the main directory and run:
 ### `npm start`
-Open [http://localhost:3000] to view it on the browser
-Navigate to the `server` folder and run `nodemon`
-Open another terminal and run `mongod`
+Open [http://localhost:3000] to view it on the browser.
+
+### Start Node Server
+- Navigate to the `server` folder
+- Run `nodemon` to start the server
+- Open another terminal and run `mongod` to start the mongoDB
