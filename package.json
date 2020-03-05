@@ -1,41 +1,30 @@
 {
   "name": "booking-form",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Booking form using Node, Express, MongoDB and Axios. To understand how to make HTTP GET and POST requests using Axios.",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
     "body-parser": "^1.19.0",
-    "bootstrap": "^4.4.1",
-    "cors": "^2.8.5",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
     "express": "^4.17.1",
-    "mongoose": "^5.8.11",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.1"
+    "express-handlebars": "^3.1.0",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0",
+    "mongodb": "^2.2.33"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hgunn97/booking-form.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "author": "Hannah Gunn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hgunn97/booking-form/issues"
+  },
+  "homepage": "https://github.com/Hgunn97/booking-form#readme"
 }
