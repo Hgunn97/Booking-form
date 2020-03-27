@@ -1,0 +1,28 @@
+<%- include("head"); -%>
+<div class="container">
+    <h1>Create New Booking</h1>
+    <form class="" action="/compose" method="post">
+        <div class="form-group">
+            <div>
+                <label>Title</label>
+                <input class="form-control" type="text" name="postTitle" required>
+            </div>
+            <div>
+                <label>Description</label>
+                <textarea class="form-control" name="postDescription" rows="5" cols="30"></textarea>
+            </div>
+            <div>
+                <label>Date</label>
+                <input class="form-control" type="date" name="postDate" required>
+            </div>
+            <div>
+                <label>Author</label>
+                <input class="form-control" name="postAuthor" required>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit" name="button">Publish</button>
+        <a class="btn btn-secondary" href="/">Cancel</a>
+    </form>
+</div>
+</body>
+</html>

@@ -2,19 +2,9 @@
   "name": "booking-form",
   "version": "1.0.0",
   "description": "Booking form using Node, Express, MongoDB and Axios. To understand how to make HTTP GET and POST requests using Axios.",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.4",
-    "debug": "^4.1.1",
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "morgan": "^1.9.1",
-    "serve-favicon": "^2.5.0",
-    "mongodb": "^2.2.33"
-  },
-  "devDependencies": {},
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Hgunn97/booking-form/issues"
   },
-  "homepage": "https://github.com/Hgunn97/booking-form#readme"
+  "homepage": "https://github.com/Hgunn97/booking-form#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6",
+    "nodemon": "^2.0.2"
+  }
 }
