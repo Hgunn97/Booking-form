@@ -47,7 +47,7 @@ app.post('/compose', (req, res) => {
 
 app.get('/posts', (req, res) => {
     Post.find({}, (err, posts) => {
-        res.render('Posts', {
+        res.render('posts', {
             posts: posts
         })
     })
@@ -57,6 +57,7 @@ app.get('/posts/:postId', (req, res) => {
     const requestedPostId = req.params.postId;
     Post.findOne({ _id: requestedPostId }, (err, post) => {
         res.render("post", {
+            id: requestedPostId,
             title: post.title,
             description: post.description,
             date: post.date,
@@ -64,6 +65,16 @@ app.get('/posts/:postId', (req, res) => {
         });
     });
 });
+
+app.get('/delete', (req, res) => {
+    res.render("delete")
+})
+
+app.post('/delete', function(req, res, next) {
+    var id = req.body.id;
+    Post.findByIdAndRemove(id).exec();
+    res.redirect('/');
+  });
 
 app.get("/compose", (req, res) => {
     res.render("compose")
