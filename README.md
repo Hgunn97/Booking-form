@@ -1,2 +1,2 @@
 # Booking Form
-Booking form using Node, Express, MongoDB and Axios. To understand how to make HTTP GET and POST requests using Axios.
+Booking form using Node, Express, MongoDB atlas. To understand how to make make GET, POST and DELETE request to a database.
